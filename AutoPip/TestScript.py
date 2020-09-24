@@ -1,4 +1,4 @@
-import json
+import json, time
 from TestMeasurement import SingleTestMeasurement
 from EclipseInterface import EclipseInterface
 class TestScript:
@@ -21,8 +21,9 @@ class TestScript:
 	def runCommands(script):
 		for meas in script.measurements:
 			pip = EclipseInterface(meas.port, meas.devName)
-			pip.ser.write(bytes(meas.command + '\n'))
+			pip.ser.write(bytes(meas.command + '\r'))
 			meas.setResponse(pip.readEclipse())
 			print meas.getResponse()
+			time.sleep(1)
 			
 
