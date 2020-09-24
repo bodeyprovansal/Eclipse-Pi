@@ -1,0 +1,13 @@
+{
+	"devices": [
+		{
+			"port": '/dev/ttyUSB0',
+			"device": "Eclipse - Alpha"
+		},
+		{
+			"port": '/dev/ttyUSB1',
+			"device": 'Eclipse - Beta'
+		}
+	]
+}
+

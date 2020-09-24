@@ -1,0 +1,23 @@
+{
+	"commands": [
+		{
+			"action": "hello"
+		},
+		{
+			"action": "up"
+		},
+		{
+			"action": "stop"
+		},
+		{
+			"action": "down"
+		},
+		{
+			"action": "downn 3"
+		},
+		{
+			"action": "get temperature"
+		}
+	]
+}
+
