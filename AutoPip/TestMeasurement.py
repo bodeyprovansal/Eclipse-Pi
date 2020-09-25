@@ -1,3 +1,4 @@
+
 from datetime import datetime
 
 class SingleTestMeasurement:
@@ -17,6 +18,6 @@ class SingleTestMeasurement:
 	def setResponse(measurement, response):
 		measurement.response = response
 		
-	#def exportMeasurement(measurement, fileName):
-		#send command, response, time to filename 
+	#def exportMeasurement(measurement):
+	#	send command, response, time to filename 
 		

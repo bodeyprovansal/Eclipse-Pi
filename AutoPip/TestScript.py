@@ -1,4 +1,4 @@
-import json, time
+import json, time, pandas
 from TestMeasurement import SingleTestMeasurement
 from EclipseInterface import EclipseInterface
 class TestScript:
@@ -6,10 +6,17 @@ class TestScript:
 		TS.measurements = []
 		f = open('script.JSON',)
 		data = json.load(f)
+		TS.name = data['scriptName']
 		for meas in data['measurements']:
 			TS.measurements.append(SingleTestMeasurement(meas['command'], 
 				meas['port'], meas['devName']))
+			
 		f.close()
+		TS.dataFrame = {'Command Sent': [],
+				'Response':[],
+				'Port': [],
+				'Device Name': []}
+		
 
 	def showCommands(script):
 		for meas in script.measurements:
@@ -19,11 +26,20 @@ class TestScript:
 			print(meas.devName)
 			
 	def runCommands(script):
+		measCount = 0
 		for meas in script.measurements:
 			pip = EclipseInterface(meas.port, meas.devName)
 			pip.ser.write(bytes(meas.command + '\r'))
 			meas.setResponse(pip.readEclipse())
 			print meas.getResponse()
+			script.dataFrame['Command Sent'].append(meas.command)
+			script.dataFrame['Response'].append(meas.response)
+			script.dataFrame['Port'].append(meas.port)
+			script.dataFrame['Device Name'].append(meas.devName)
 			time.sleep(1)
+			measCount += 1
 			
-
+	def exportMeasurements(script):
+		pandasDF = pandas.DataFrame(script.dataFrame)
+		csv_ts = pandasDF.to_csv(script.name, header = True)
+		#print('\nExport Results:\n, csv_ts)

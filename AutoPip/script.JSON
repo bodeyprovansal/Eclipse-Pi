@@ -1,4 +1,5 @@
 {
+	"scriptName": "test1script.csv",
 	"measurements": [
 		{
 			"command": "hello",

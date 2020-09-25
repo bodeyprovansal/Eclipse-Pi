@@ -12,4 +12,5 @@ class TestHandler():
 	def runScripts(handler):
 		for script in handler.testScripts:
 			script.runCommands()
+			script.exportMeasurements()
 		
