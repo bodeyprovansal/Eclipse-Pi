@@ -1,8 +1,11 @@
 from TestHandler import TestHandler
-from EclipseHTTPServer import EclipseHTTPServer
+from EclipseHTTPClient import EclipseHTTPClient
+
+newClient = EclipseHTTPClient("192.168.1.172", 9090, "Hello Server")
+#from EclipseHTTPServer import EclipseHTTPServer
 #Test Handler starts a new Test
 newTest = TestHandler()
-newServer = EclipseHTTPServer("test", 12345, "192.168.1.188")
+#newServer = EclipseHTTPServer("test", 12345, "192.168.1.188")
 #Tests are composed of TestScripts
 #TestScripts are composed of TestMeasurements
 #TestMeasurements are composed of:

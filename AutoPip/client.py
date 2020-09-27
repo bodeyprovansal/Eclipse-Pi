@@ -8,7 +8,7 @@ try:
 except socket.error as err:
     print ("socket was not created, failed with error %s" %(err))
 
-port = 12345
+port = 9090
 
 s.connect(('192.168.1.172', port))
 print (s.recv(1024))
