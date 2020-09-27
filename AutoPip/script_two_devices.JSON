@@ -1,0 +1,40 @@
+{
+	"scriptName": "two devices.csv",
+	"measurements": [
+		{
+			"command": "password 499d89754b41",
+			"port": "/dev/ttyUSB1",
+			"devName": "Pippin - Production - SN 00085"
+		},
+		{
+			"command": "hello",
+			"port": "/dev/ttyUSB1",
+			"devName": "Pippin - Production - SN 00085"
+		},
+		{
+			"command": "up",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha"
+		},
+		{
+			"command": "stop",
+			"port": "/dev/ttyUSB1",
+			"devName": "Pippin - Production - SN 00085"
+		},
+		{
+			"command": "down",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha"
+		},
+		{
+			"command": "downn 3",
+			"port": "/dev/ttyUSB1",
+			"devName": "Pippin - Production - SN 00085"
+		},
+		{
+			"command": "get temperature",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha"
+		}
+	]
+}

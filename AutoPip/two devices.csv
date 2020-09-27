@@ -1,0 +1,17 @@
+,Command Sent,Device Name,Port,Response
+0,password 499d89754b41,Pippin - Production - SN 00085,/dev/ttyUSB1,"PippinTest1 rdy>
+"
+1,hello,Pippin - Production - SN 00085,/dev/ttyUSB1,"unknown command <hello>
+PippinTest1 rdy>
+"
+2,up,Pippin - Alpha,/dev/ttyUSB0,"sending shade up command
+"
+3,stop,Pippin - Production - SN 00085,/dev/ttyUSB1,"sending shade stop command
+"
+4,down,Pippin - Alpha,/dev/ttyUSB0,"sending shade down command
+"
+5,downn 3,Pippin - Production - SN 00085,/dev/ttyUSB1,"PippinTest1 rdy>
+"
+6,get temperature,Pippin - Alpha,/dev/ttyUSB0,"nTmp=27 deg C
+PippinTest1 rdy>
+"

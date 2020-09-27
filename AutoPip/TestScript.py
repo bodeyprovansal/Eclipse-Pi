@@ -4,7 +4,7 @@ from EclipseInterface import EclipseInterface
 class TestScript:
 	def __init__(TS, scriptFile):
 		TS.measurements = []
-		f = open('script.JSON',)
+		f = open(scriptFile,)
 		data = json.load(f)
 		TS.name = data['scriptName']
 		for meas in data['measurements']:
@@ -36,10 +36,11 @@ class TestScript:
 			script.dataFrame['Response'].append(meas.response)
 			script.dataFrame['Port'].append(meas.port)
 			script.dataFrame['Device Name'].append(meas.devName)
-			time.sleep(1)
+			time.sleep(3)
 			measCount += 1
-			
+			pip.ser.close()
+		
 	def exportMeasurements(script):
 		pandasDF = pandas.DataFrame(script.dataFrame)
-		csv_ts = pandasDF.to_csv(script.name, header = True)
+		csv_ts = pandasDF.to_csv(script.name, quoting = None, header = True)
 		#print('\nExport Results:\n, csv_ts)

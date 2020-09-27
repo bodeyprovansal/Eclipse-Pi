@@ -39,7 +39,7 @@ class EclipseInterface:
         #output = pip.readline()
         #print output
         rx_data = interface.ser.read()
-        time.sleep(0.03)
+        time.sleep(0.3)
         data_left = interface.ser.inWaiting()
         rx_data += interface.ser.read(data_left)
         rx_data.decode('utf-8')
