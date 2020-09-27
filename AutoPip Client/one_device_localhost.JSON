@@ -1,0 +1,47 @@
+{
+	"scriptName": "test1localhost.csv",
+	"measurements": [
+		{
+			"command": "hello",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "up",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "stop",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "down",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "downn 3",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "get temperature",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		}
+	]
+}

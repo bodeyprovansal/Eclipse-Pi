@@ -1,7 +1,7 @@
 from TestHandler import TestHandler
 from EclipseHTTPClient import EclipseHTTPClient
 
-newClient = EclipseHTTPClient("192.168.1.172", 9090, "Hello Server")
+#newClient = EclipseHTTPClient("192.168.1.172", 9090, "Hello Server")
 #from EclipseHTTPServer import EclipseHTTPServer
 #Test Handler starts a new Test
 newTest = TestHandler()
@@ -15,7 +15,7 @@ newTest = TestHandler()
 	#a friendly name for the device at that port
 	#response(s) from that port
 print("---- Start -----")
-newTest.addScript('script_two_devices.JSON')
+newTest.addScript('one_device_http.JSON')
 newTest.runScripts()
 print("---- End -----")
 
