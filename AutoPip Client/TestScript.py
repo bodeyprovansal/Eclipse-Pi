@@ -45,7 +45,7 @@ class TestScript:
 				measCount += 1
 				pip.ser.close()
 			else:
-				request = EclipseHTTPClient(meas.host, int(meas.TCPport), meas.command)
+				request = EclipseHTTPClient(meas.host, int(meas.TCPport), meas.port, meas.command)
 				time.sleep(3)
 				response = request.msg_from_server
 				print(response.decode('ascii'))
