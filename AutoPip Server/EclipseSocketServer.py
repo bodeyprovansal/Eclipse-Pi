@@ -13,10 +13,13 @@ class EclipseSocketServer():
         serversocket = socket.socket(
             socket.AF_INET, socket.SOCK_STREAM)
             
-        host = socket.gethostname()
-        
+        #host = socket.gethostname()
+        host = '192.168.1.188'
+        print("Server running on: ")
+        print(host) 
         port = 9090
-        
+        print("On outbound port: ")
+        print(port) 
         serversocket.bind((host, port))
         
         serversocket.listen(5)
