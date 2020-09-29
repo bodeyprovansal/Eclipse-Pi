@@ -33,9 +33,9 @@ class TestScript:
 			if(meas.host == 'localhost'):
 				#script.runLocalCommand(meas)
 				pip = EclipseInterface(meas.port, meas.devName)
-				pip.ser.write(bytes(meas.command + '\r'))
+				pip.ser.write(bytes(meas.command + '\r', encoding='utf-8'))
 				meas.setResponse(pip.readEclipse())
-				print meas.getResponse()
+				print (meas.getResponse())
 				script.dataFrame['Command Sent'].append(meas.command)
 				script.dataFrame['Response'].append(meas.response)
 				script.dataFrame['Port'].append(meas.port)
@@ -54,9 +54,9 @@ class TestScript:
 	
 	def runLocalCommand(script, meas):
 		pip = EclipseInterface(meas.port, meas.devName)
-		pip.ser.write(bytes(meas.command + '\r'))
+		pip.ser.write(bytes(meas.command + '\r'), 'utf-8')
 		meas.setResponse(pip.readEclipse())
-		print meas.getResponse()
+		print (meas.getResponse())
 		script.dataFrame['Command Sent'].append(meas.command)
 		script.dataFrame['Response'].append(meas.response)
 		script.dataFrame['Port'].append(meas.port)
