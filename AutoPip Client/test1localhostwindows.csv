@@ -1,7 +1,6 @@
 ,Command Sent,Response,Port,Device Name,Host
-0,hello,b'unknown command <>\r\nPippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost
-1,up,b'',COM11,Pippin - Alpha,localhost
-2,stop,b'ding shade stop command\r\n',COM11,Pippin - Alpha,localhost
-3,down,b'',COM11,Pippin - Alpha,localhost
-4,downn 3,b'PippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost
-5,get temperature,b'',COM11,Pippin - Alpha,localhost
+0,up,b'ding shade up command\r\nPippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost
+1,stop,b'ding shade stop command\r\nPippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost
+2,down,b'sending shade down command\r\nPippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost
+3,downn 3,b'PippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost
+4,get temperature,b'nTmp=27 deg C\r\nPippinTest1 rdy>\r\n',COM11,Pippin - Alpha,localhost

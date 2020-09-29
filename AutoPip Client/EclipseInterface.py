@@ -31,6 +31,7 @@ class EclipseInterface:
         
     def writeEclipse(interface, command):
         interface.ser.write(command)
+        interface.ser.write(bytes('\r', encoding='ascii'))
         time.sleep(1)
         return
     
@@ -38,6 +39,7 @@ class EclipseInterface:
     #while output != "":
         #output = pip.readline()
         #print output
+        #interface.ser.write(bytes('\r', encoding='utf-8'))
         rx_data = interface.ser.read()
         time.sleep(0.3)
         data_left = interface.ser.inWaiting()

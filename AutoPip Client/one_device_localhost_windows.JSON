@@ -2,13 +2,6 @@
 	"scriptName": "test1localhostwindows.csv",
 	"measurements": [
 		{
-			"command": "hello",
-			"port": "COM11",
-			"devName": "Pippin - Alpha",
-			"host": "localhost",
-			"tcp_port": "9090"
-		},
-		{
 			"command": "up",
 			"port": "COM11",
 			"devName": "Pippin - Alpha",
