@@ -47,8 +47,8 @@ class TestScript:
 			else:
 				request = EclipseHTTPClient(meas.host, int(meas.TCPport), meas.port, meas.command)
 				time.sleep(3)
-				response = request.msg_from_server
-				print(response.decode('ascii'))
+				response = request.getResponse()
+				print("Response: " + response.decode('utf-8'))
 				#script.runRemoteCommand(meas)
 			
 	

@@ -15,7 +15,7 @@ newTest = TestHandler()
 	#a friendly name for the device at that port
 	#response(s) from that port
 print("---- Start -----")
-newTest.addScript('one_device_localhost.JSON')
+newTest.addScript('one_device_http.JSON')
 newTest.runScripts()
 print("---- End -----")
 
