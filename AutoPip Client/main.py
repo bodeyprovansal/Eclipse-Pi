@@ -16,6 +16,7 @@ newTest = TestHandler()
 	#response(s) from that port
 print("---- Start -----")
 newTest.addScript('win_to_pi.JSON')
+newTest.addScript('win_to_pi_accel.JSON')
 newTest.runScripts()
 print("---- End -----")
 

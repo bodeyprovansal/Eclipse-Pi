@@ -1,5 +1,7 @@
 ,Command Sent,Response,Port,Device Name,Host
-0,hello,b'unknown command <hello>\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
-1,up,b'sending shade up command\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
-2,stop,b'sending shade stop command\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
-3,get temperature,b'nTmp=25 deg C\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
+0,accel set mode enabled,b'PippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
+1,accel get xyz,b'x=-72 y=-4 z=225\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
+2,accel get xyz_delta,b'xDelta=0 yDelta=1 zDelta=0\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
+3,accel get motion,b'0\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
+4,accel get motion threshold,b'Motion threshold=5\r\n\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188
+5,accel get mode,b'Enabled\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,192.168.1.188

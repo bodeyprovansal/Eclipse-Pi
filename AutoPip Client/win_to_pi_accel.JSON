@@ -2,33 +2,46 @@
 	"scriptName": "test2http.csv",
 	"measurements": [
 		{
-			"command": "hello",
+			"command": "accel set mode enabled",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.188",
 			"tcp_port": "9090"
 		},
 		{
-			"command": "up",
+			"command": "accel get xyz",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.188",
 			"tcp_port": "9090"
 		},
 		{
-			"command": "stop",
+			"command": "accel get xyz_delta",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.188",
 			"tcp_port": "9090"
 		},
 		{
-			"command": "get temperature",
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "192.168.1.188",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion threshold",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "192.168.1.188",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get mode",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.188",
 			"tcp_port": "9090"
 		}
-		
 	]
 }
