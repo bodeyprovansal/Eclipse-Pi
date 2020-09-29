@@ -3,28 +3,28 @@
 	"measurements": [
 		{
 			"command": "hello",
-			"port": "COM3",
+			"port": "COM11",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.172",
 			"tcp_port": "9090"
 		},
 		{
 			"command": "up",
-			"port": "COM3",
+			"port": "COM11",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.172",
 			"tcp_port": "9090"
 		},
 		{
 			"command": "stop",
-			"port": "COM3",
+			"port": "COM11",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.172",
 			"tcp_port": "9090"
 		},
 		{
 			"command": "get temperature",
-			"port": "COM3",
+			"port": "COM11",
 			"devName": "Pippin - Alpha",
 			"host": "192.168.1.172",
 			"tcp_port": "9090"
