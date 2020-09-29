@@ -1,6 +1,7 @@
 import http.server
 import socketserver
 import socket
+import time
 from EclipseInterface import EclipseInterface
 
 
@@ -27,20 +28,26 @@ class EclipseSocketServer():
             clientsocket, addr = serversocket.accept()
             
             print("Got a connection from %s" % str(addr))
-            
+            msg_send="*No Response*\n"
             msg_rec = clientsocket.recv(1024)
+            print("Rec from client: " + msg_rec.decode('utf-8') + "\n")
             LOCAL_DEV_PORT = msg_rec[msg_rec.find(LOCAL_DEV_PORT_START)+len(LOCAL_DEV_PORT_START):msg_rec.rfind(LOCAL_DEV_PORT_END)]
             msg_rec = msg_rec[msg_rec.find(LOCAL_DEV_PORT_END) + len(LOCAL_DEV_PORT_END):len(msg_rec)]
             
             #print("Message from client: " + msg_rec.decode('utf-8'))
             #msg_rec = msg_rec.decode('utf-8')
-            print("Sending command to local port: " + LOCAL_DEV_PORT.decode('utf-8'))
+            
             
             pip = EclipseInterface(LOCAL_DEV_PORT.decode('utf-8'), LOCAL_DEV_PORT.decode('utf-8'))
-            pip.ser.write(bytes(msg_rec.decode('utf-8') + '\r', encoding='utf-8'))
+            msg_rec = (msg_rec.decode('utf-8') + '\r')
+            print("Sending: " + msg_rec + "\nto device port: " + LOCAL_DEV_PORT.decode('utf-8'))
+            pip.ser.write(bytes(msg_rec, encoding='utf-8'))
+            
             #pip.ser.write(bytes('\r'))
             msg_send = pip.readEclipse()
             
+            pip.closeEclipse()
+            print("Received from device port: " + msg_send.decode('utf-8'))
             clientsocket.sendall(msg_send)
             clientsocket.close()
             
