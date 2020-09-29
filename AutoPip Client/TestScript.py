@@ -49,6 +49,12 @@ class TestScript:
                 time.sleep(3)
                 response = request.getResponse()
                 print("Response: " + response.decode('utf-8'))
+                meas.setResponse(response)
+                script.dataFrame['Command Sent'].append(meas.command)
+                script.dataFrame['Response'].append(meas.response)
+                script.dataFrame['Port'].append(meas.port)
+                script.dataFrame['Device Name'].append(meas.devName)
+                script.dataFrame['Host'].append(meas.host)
                 #script.runRemoteCommand(meas)
             
 
