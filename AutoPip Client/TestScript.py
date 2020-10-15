@@ -80,5 +80,6 @@ class TestScript:
 
     def exportMeasurements(script):
         pandasDF = pandas.DataFrame(script.dataFrame)
-        csv_ts = pandasDF.to_csv(script.name, quoting = None, header = True)
+        return pandasDF
+	#csv_ts = pandasDF.to_csv(script.name, quoting = None, header = True)
         #print('\nExport Results:\n, csv_ts)
