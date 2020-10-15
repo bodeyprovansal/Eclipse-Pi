@@ -5,28 +5,28 @@
 			"command": "hello",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
-			"host": "192.168.1.188",
+			"host": "10.10.1.204",
 			"tcp_port": "9090"
 		},
 		{
 			"command": "up",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
-			"host": "192.168.1.188",
+			"host": "10.10.1.204",
 			"tcp_port": "9090"
 		},
 		{
 			"command": "stop",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
-			"host": "192.168.1.188",
+			"host": "10.10.1.204",
 			"tcp_port": "9090"
 		},
 		{
 			"command": "get temperature",
 			"port": "/dev/ttyUSB0",
 			"devName": "Pippin - Alpha",
-			"host": "192.168.1.188",
+			"host": "10.10.1.204",
 			"tcp_port": "9090"
 		}
 		
