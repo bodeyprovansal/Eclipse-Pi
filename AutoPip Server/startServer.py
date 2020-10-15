@@ -1,4 +1,4 @@
-import socketserver
+#import socketserver
 from EclipseHTTPServer import EclipseHTTPServer
 from EclipseSocketServer import EclipseSocketServer
 #newServer = EclipseHTTPServer(12345)

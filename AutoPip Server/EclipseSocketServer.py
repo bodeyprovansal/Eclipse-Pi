@@ -14,7 +14,7 @@ class EclipseSocketServer():
             socket.AF_INET, socket.SOCK_STREAM)
             
         #host = socket.gethostname()
-        host = '192.168.1.188'
+        host = '10.10.1.204'
         print("Server running on: ")
         print(host) 
         port = 9090
