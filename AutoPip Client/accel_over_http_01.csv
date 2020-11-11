@@ -1,0 +1,7 @@
+,Command Sent,Response,Port,Device Name,Host
+0,accel set mode enabled,b'PippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+1,accel get xyz,b'x=-224 y=-21 z=30\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+2,accel get xyz_delta,b'xDelta=1 yDelta=0 zDelta=1\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+3,accel get motion,b'0\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+4,accel get motion threshold,b'Motion threshold=5\r\n\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+5,accel get mode,b'Enabled\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204

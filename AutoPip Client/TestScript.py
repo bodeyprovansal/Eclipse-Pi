@@ -56,7 +56,6 @@ class TestScript:
                 script.dataFrame['Device Name'].append(meas.devName)
                 script.dataFrame['Host'].append(meas.host)
                 #script.runRemoteCommand(meas)
-            
 
     def runLocalCommand(script, meas):
         pip = EclipseInterface(meas.port, meas.devName)
@@ -79,7 +78,7 @@ class TestScript:
         print(response.decode('ascii'))
 
     def exportMeasurements(script):
-        pandasDF = pandas.DataFrame(script.dataFrame)
-        return pandasDF
-	#csv_ts = pandasDF.to_csv(script.name, quoting = None, header = True)
+        pandasDF = pandas.DataFrame(script.dataFrame) #
+        csv_ts = pandasDF.to_csv(script.name, quoting = None, header = True)
         #print('\nExport Results:\n, csv_ts)
+        return pandasDF

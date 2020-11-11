@@ -15,8 +15,10 @@ newTest = TestHandler()
 	#a friendly name for the device at that port
 	#response(s) from that port
 print("---- Start -----")
-newTest.addScript('win_to_pi.JSON')
-newTest.addScript('win_to_pi_accel.JSON')
+newTest.addScript('pip_local_http_01.JSON')
+#newTest.addScript('win_to_pi.JSON')
+#newTest.addScript('one_device_localhost_windows.JSON')
+#newTest.addScript('win_to_pi_accel.JSON')
 newTest.runScripts()
 print("---- End -----")
 

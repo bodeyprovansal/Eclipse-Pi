@@ -1,0 +1,19 @@
+,Command Sent,Response,Port,Device Name,Host
+0,accel set mode enabled,b'PippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+1,accel get motion threshold,b'Motion threshold=5\r\n\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+2,accel set motion threshold 2,b'PippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+3,accel get motion threshold,b'Motion threshold=2\r\n\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+4,accel get mode,b'Enabled\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+5,up,b'sending shade up command\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost
+6,accel get motion,b'1\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+7,stop,b'sending shade stop command\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost
+8,accel get motion,b'0\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+9,down,b'sending shade down command\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost
+10,accel get motion,b'1\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+11,up,b'sending shade up command\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost
+12,accel get motion,b'1\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+13,down,b'sending shade down command\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost
+14,accel get motion,b'1\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+15,up,b'sending shade up command\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost
+16,accel get motion,b'1\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+17,get temperature,b'nTmp=0 deg C\r\nPippinTest1 rdy>\r\n',COM11,Eclipse - Shade Controller,localhost

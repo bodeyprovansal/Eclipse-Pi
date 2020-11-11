@@ -7,6 +7,7 @@ class TestHandler():
 		TH.testScripts = []
 		TH.testMeasurements = []
 		TH.resultsDF = pandas.DataFrame()
+		TH.testName = TH.testTime.strftime("%m%d%Y%H%M%S") + ".csv"
 		
 	def addScript(handler, script):
 		newScript = TestScript(script)
@@ -18,5 +19,4 @@ class TestHandler():
 			handler.testMeasurements.append(script.exportMeasurements())
 		for meas in handler.testMeasurements:
 			handler.resultsDF.append(meas, ignore_index=True)
-		handler.resultsDF.to_csv(TH.testTime, quoting = None, header = True)
-		
+		csv_all = handler.resultsDF.to_csv(handler.testName, quoting = None, header = True)

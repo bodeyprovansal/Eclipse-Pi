@@ -1,0 +1,5 @@
+,Command Sent,Response,Port,Device Name,Host
+0,hello,b'unknown command <>\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+1,up,b'sending shade up command\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+2,stop,b'sending shade stop command\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204
+3,get temperature,b'nTmp=23 deg C\r\nPippinTest1 rdy>\r\n',/dev/ttyUSB0,Pippin - Alpha,10.10.1.204

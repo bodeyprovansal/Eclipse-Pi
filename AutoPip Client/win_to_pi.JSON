@@ -1,5 +1,5 @@
 {
-	"scriptName": "test2http.csv",
+	"scriptName": "pip_over_http_01.csv",
 	"measurements": [
 		{
 			"command": "hello",

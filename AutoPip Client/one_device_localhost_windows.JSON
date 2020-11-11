@@ -1,5 +1,5 @@
 {
-	"scriptName": "test1localhostwindows.csv",
+	"scriptName": "pip_local_win_01.csv",
 	"measurements": [
 		{
 			"command": "up",
@@ -17,6 +17,27 @@
 		},
 		{
 			"command": "down",
+			"port": "COM11",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "up",
+			"port": "COM11",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "down",
+			"port": "COM11",
+			"devName": "Pippin - Alpha",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "up",
 			"port": "COM11",
 			"devName": "Pippin - Alpha",
 			"host": "localhost",

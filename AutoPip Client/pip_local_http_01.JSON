@@ -1,0 +1,131 @@
+{
+	"scriptName": "pip_local_http_01.csv",
+	"measurements": [
+		{
+			"command": "accel set mode enabled",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion threshold",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel set motion threshold 2",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion threshold",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get mode",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "up",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "stop",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "down",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "up",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "down",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "up",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "accel get motion",
+			"port": "/dev/ttyUSB0",
+			"devName": "Pippin - Alpha",
+			"host": "10.10.1.204",
+			"tcp_port": "9090"
+		},
+		{
+			"command": "get temperature",
+			"port": "COM11",
+			"devName": "Eclipse - Shade Controller",
+			"host": "localhost",
+			"tcp_port": "9090"
+		}
+	]
+}
