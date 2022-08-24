@@ -29,8 +29,6 @@ def openPippin(pipPort, pipTimeout):
         timeout=pipTimeout
     )
     continueReading = True
-    #readThread = threading.Thread(target=readFromPippin(pip))
-    #readThread.start()
     return pip
 def getLinesFromPippin(lines):
     print("getLineFromPippin:\n")
@@ -89,14 +87,10 @@ def writeToPippin(msg, pip):
     lArray = [None] * 256
     lIndex = 0
     while (pip.in_waiting > 0):
-        #pbuf = pip.read_until('\r \n', 64)
-        #pbuf = pip.readlines()
         nextByte = pip.read(1)
         if(nextByte == '\r' or nextByte == '\n'
             or nextByte == '\r\n' or nextByte == '\n\r'):
                 if(len(cArray) > 0):
-                    #print("new line found, and cArray size is:")
-                    #print(len(cArray))
                     tArray = [None] * len(cArray)
                     for k in range(0, len(cArray)):
                         tArray[k] = cArray[k]
@@ -106,23 +100,10 @@ def writeToPippin(msg, pip):
                     del cArray[:]
                     lArray[lIndex] = textLine
                     lIndex += 1
-                #out += nextByte
-                #pbuf[counter] = out
-                #counter += 1
-                #print(pbuf)
-                #getLinesFromPippin(pbuf)
         else:
             cArray += nextByte
-            
-            #print(counter)
-            #print(cArray)
-        #esponse = getResponseFromPippin(out)
-        #if response != '':
-            #print(response)
-        #getLinesFromPippin(pbuf)
         if pbuf:
-            rv = 0
-            
+            rv = 0           
     return rv
     
     
@@ -139,45 +120,4 @@ while continueRunning:
     time.sleep(1)
     writeToPippin('down', pip)
     time.sleep(1)
-    #writeToPippin('stop', pip)
-    #time.sleep(1)
-    #pip.flush()
-    #closePippin(pip)
-        #print("buffer filled")
-    #rec.append(pbuf)
-        #print(rec)
-    #rec = ''.join(rec)
-    
-    #print("In Waiting: %d"%(pip.in_waiting))
-    #print("out Waiting: %d"%(pip.out_waiting))
-    #data = pip.readline()
-    #print(pbuf)
-    #time.sleep(1)
-    
-
-#ser = serial.Serial(
-        #port='/dev/ttyUSB0',
-        #baudrate = 9600,
-        #parity=serial.PARITY_NONE,
-        #stopbits=serial.STOPBITS_ONE,
-        #bytesize=serial.EIGHTBITS,
-        #timeout=0
-        #)
-#counter = 0
-#ser.close()
-
-#with serial.serial_for_url('/dev/ttyUSB0') as s:
-    #s.flush()
-    #writeToPippin('hello', s)
-    #writeToPippin('stop', s)
-    #writeToPippin('up', s)
-    #writeToPippin('help gandalf', s)
-
-
-#writeToPippin('hello', ser)
-#time.sleep(1)
-#writeToPippin('stop', ser)
-#time.sleep(1)
-#writeToPippin('help', ser)
-#time.sleep(10)
     
